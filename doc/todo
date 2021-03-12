@@ -1,0 +1,23 @@
+    优先满足clickhouse的配置修改，故先不实现复杂需求。
+# 基本对象
+    key：String类型（xxx.vvv.xcx）
+    content：
+        有几种类型：
+            String：直接添加text；
+            Tag：（attribute（key\value）、content）递归添加标签
+            ArrayContent：TODO
+
+# 1.增加tag
+## json传参方式
+    参数：
+        path、content
+## doc传参方式
+    参数：doc字符串
+
+# 2.修改tag
+    参数：
+        path、content
+# 3.删除tag
+    参数：path
+
+# 备份机制：每一次修改以备份，而非覆盖的方式
