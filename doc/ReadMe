@@ -1,0 +1,4 @@
+java -jar xml-operator-entrance-1.0-SNAPSHOT-jar-with-dependencies.jar  put "G:\HZY\coding\Java\IdeaCoding\xml-operator\data\config.xml" /yandex/openSSL/server "<logger>       <level id=\"asdasd\">trace</level>          <log>/var/log/clickhouse-server/clickhouse-server.log</log>          <errorlog>/var/log/clickhouse-server/clickhouse-server.err.log</errorlog>       </logger>"
+
+
+java -jar xml-operator-entrance-1.0-SNAPSHOT-jar-with-dependencies.jar  rm "G:\HZY\coding\Java\IdeaCoding\xml-operator\data\config.xml" /yandex/openSSL/server/logger 
