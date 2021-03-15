@@ -41,7 +41,8 @@ public class XmlOperatorApplication {
         else{
 
         }
-        domOperator.flushAndBak();
+        if(res)
+            domOperator.flushAndBak();
         System.out.println("Result:"+res);
     }
     public static void printHelp(){
