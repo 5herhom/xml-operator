@@ -185,9 +185,10 @@
       <disableProtocols>sslv2,sslv3</disableProtocols>  
       <preferServerCiphers>true</preferServerCiphers>  
       <logger> 
-        <level id="asdasd">trace</level>  
+        <!-- Possible levels: https://github.com/pocoproject/poco/blob/poco-1.9.4-release/Foundation/include/Poco/Logger.h#L105 -->  
+        <level id="hzy01">trace</level>  
         <log>/var/log/clickhouse-server/clickhouse-server.log</log>  
-        <errorlog>/var/log/clickhouse-server/clickhouse-server.err.log</errorlog> 
+        <errorlog>/var/log/clickhouse-server/clickhouse-server.err02.log</errorlog> 
       </logger>
     </server>  
     <client> 

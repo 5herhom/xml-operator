@@ -183,12 +183,7 @@
       <loadDefaultCAFile>true</loadDefaultCAFile>  
       <cacheSessions>true</cacheSessions>  
       <disableProtocols>sslv2,sslv3</disableProtocols>  
-      <preferServerCiphers>true</preferServerCiphers>  
-      <logger> 
-        <level id="asdasd">trace</level>  
-        <log>/var/log/clickhouse-server/clickhouse-server.log</log>  
-        <errorlog>/var/log/clickhouse-server/clickhouse-server.err.log</errorlog> 
-      </logger>
+      <preferServerCiphers>true</preferServerCiphers> 
     </server>  
     <client> 
       <!-- Used for connecting to https dictionary source and secured Zookeeper communication -->  

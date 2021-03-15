@@ -185,7 +185,7 @@
       <disableProtocols>sslv2,sslv3</disableProtocols>  
       <preferServerCiphers>true</preferServerCiphers>  
       <logger> 
-        <level id="asdasd">trace</level>  
+        <level id="hzy123123">trace</level>  
         <log>/var/log/clickhouse-server/clickhouse-server.log</log>  
         <errorlog>/var/log/clickhouse-server/clickhouse-server.err.log</errorlog> 
       </logger>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Properties>
+        <Property name="common.pattern">%d{DEFAULT} %level %C %L [%t] %msg%n</Property>
+        <Property name="base.path">logs/jdbc-simple</Property>
+        <Property name="common.level">DEBUG</Property>
+        <Property name="common.file.name">reno-jdbc-simple</Property>
+        <Property name="error.file.name">${common.file.name}-error</Property>
+        <Property name="debug.file.name">${common.file.name}-debug</Property>
+        <Property name="common.file.pattern">%d{yyyy-MM-dd}</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${common.pattern}"/>
+            <!--            <PatternLayout pattern="%d %-5p [%t] %-5level %C{2} (%F:%L) - %msg%n"/>-->
+            <!--            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>-->
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="DEBUG">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
